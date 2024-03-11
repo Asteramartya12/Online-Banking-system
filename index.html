@@ -7,23 +7,28 @@
     <title>Centralized Banking System</title>
   </head>
   <body>
-    <header>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><button id="login-btn">Login</button></li>
-          <li><button id="signup-btn">Sign Up</button></li>
-        </ul>
+        <div class="left-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="right-links">
+          <a href="#" class="btn btn-login">
+            <i class="fas fa-sign-in-alt"></i>
+            Login
+          </a>
+          <a href="#" class="btn btn-signup">
+            <i class="fas fa-user-plus"></i>
+            Sign Up
+          </a>
+        </div>
       </nav>
-    </header>
     <main>
       <section id="hero">
-        <h1>Welcome to Centralized Banking System</h1>
+        <h1 class="animated-text">Welcome to Centralized Banking System</h1>
         <p>Secure, fast, and reliable banking services for all your financial needs.</p>
-        <button id="learn-more-btn">Learn More</button>
       </section>
       <section id="features">
         <h2>Our Features</h2>
@@ -75,6 +80,9 @@
         </form>
       </div>
     </aside>
+    <footer>
+      <p>&copy; 2024 Money_Heist. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
