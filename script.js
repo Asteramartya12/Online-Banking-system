@@ -1,7 +1,22 @@
-const heroContainer = document.querySelector('.hero-container');
+document.getElementById("login-btn").addEventListener("click", function() {
+  document.getElementById("login-modal").style.display = "block";
+});
 
-window.addEventListener('load', () => {
-  // Animate the opacity of the hero container to show content gradually
-  heroContainer.style.opacity = 1;
-  heroContainer.style.transition = 'opacity 0.5s ease-in-out';
+document.getElementById("signup-btn").addEventListener("click", function() {
+  document.getElementById("signup-modal").style.display = "block";
+});
+
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  document.getElementById("login-modal").style.display = "none";
+  document.getElementById("signup-modal").style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == document.getElementById("login-modal")) {
+    document.getElementById("login-modal").style.display = "none";
+  }
+
+  if (event.target == document.getElementById("signup-modal")) {
+    document.getElementById("signup-modal").style.display = "none";
+  }
 });

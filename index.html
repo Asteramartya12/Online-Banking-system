@@ -1,19 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Section Example</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section class="hero">
-    <div class="hero-container">
-      <h1>Welcome to Our Bank</h1>
-      <p>Manage your finances easily and securely online.</p>
-      <a href="#" class="hero-button">Get Started</a>
-    </div>
-  </section>
-  <script src="script.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Centralized Banking System</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button id="login-btn">Login</button></li>
+          <li><button id="signup-btn">Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Welcome to Centralized Banking System</h1>
+        <p>Secure, fast, and reliable banking services for all your financial needs.</p>
+        <button id="learn-more-btn">Learn More</button>
+      </section>
+      <section id="features">
+        <h2>Our Features</h2>
+        <ul>
+          <li>
+            <h3>Online Banking</h3>
+            <p>Access your account anytime, anywhere with our secure online banking platform.</p>
+          </li>
+          <li>
+            <h3>Mobile Banking</h3>
+            <p>Manage your finances on-the-go with our easy-to-use mobile banking app.</p>
+          </li>
+          <li>
+            <h3>Bill Payments</h3>
+            <p>Pay your bills quickly and easily with our bill payment service.</p>
+          </li>
+          <li>
+            <h3>24/7 Customer Support</h3>
+            <p>Our dedicated customer support team is available 24/7 to assist you with any questions or concerns.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <aside id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </aside>
+    <aside id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </aside>
+    <script src="script.js"></script>
+  </body>
 </html>
