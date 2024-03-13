@@ -20,3 +20,5 @@ window.addEventListener("click", function(event) {
     document.getElementById("signup-modal").style.display = "none";
   }
 });
+
+$(".up").click(function(){scroll(0,0)});

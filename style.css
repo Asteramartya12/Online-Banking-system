@@ -8,6 +8,7 @@ body {
   padding: 0;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -75,17 +76,31 @@ nav {
   background-color: #756f6f;
 }
 
+
 #hero {
   background-image: url("/Pictures/bg-home.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 1200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-color: #000000;
+  color: #fff;
   background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgb(255, 251, 251);
   flex-direction: column;
+}
+
+#hero .bgpic {
+  height: 1200px;
+  background-image: url("/Pictures/bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 #hero h1 {
@@ -245,4 +260,24 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+
+.upper-arrow {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.upper-arrow:hover {
+  opacity: 0.7;
 }
