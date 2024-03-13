@@ -22,3 +22,11 @@ window.addEventListener("click", function(event) {
 });
 
 $(".up").click(function(){scroll(0,0)});
+
+const bars = document.querySelectorAll('.bar');
+
+bars.forEach((bar, index) => {
+  setTimeout(() => {
+    bar.style.height = `${bar.dataset.height}%`;
+  }, index * 200);
+});
