@@ -30,3 +30,5 @@ bars.forEach((bar, index) => {
     bar.style.height = `${bar.dataset.height}%`;
   }, index * 200);
 });
+
+
