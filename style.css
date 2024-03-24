@@ -14,7 +14,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  padding: 15px 20px;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  
 }
 
 .left-links {
@@ -80,7 +85,7 @@ nav {
 #home {
   background-image: url("/Pictures/bg-home.jpg");
   height: 1200px;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   background-size: contain;
   background-position-x: center;
   background-color: #000000;
@@ -161,155 +166,124 @@ nav {
 /* -----------------------About---------------------------------- */
 
 #about {
+  font-family: Arial, sans-serif;
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #0b0707;
 }
 
-.bar-graph {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 4rem;
-}
-
-.bar-container {
-  position: relative;
-  width: 45%;
-}
-
-.bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ff0000;
-  transition: height 0.5s ease-in-out;
-}
-
-.bar-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #141010;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-.bar-label .number {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.bar-label .text {
-  font-size: 1.2rem;
-  text-transform: none;
-}
 
 #about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  background-color: #f6ebeb;
+  color: rgb(18, 13, 13);
+  padding: 30px;
 }
 
-#about p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
+
+#about #animated-section {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* ------------------------Foot Features---------------------- */
+#about p{
+  color: #fff;
+  padding-top: 30px;
+}
+
+/* ------------------------services---------------------- */
 #features {
-  background-color: #f5f5f5;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: #000000;
 }
 
 #features h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 #features li {
   flex-basis: calc(33.33% - 2rem);
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 #features h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 #features p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
-.modal-content {
-  background-color: white;
-  margin: 15% auto;
-  padding: 2rem;
-  border: 1px solid #888;
-  width: 30%;
+/*-------------------------------------contact us----------------------*/
+
+#contact {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  margin: 0;
+  background-color: #0a0505;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  transition: background-color 1s ease;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+#contact h1, h2 {
   font-weight: bold;
+  color: #fbf6f6;
+  margin-bottom: 20px;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+#contact h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+#contact .fade-out {
+  background-color: transparent;
+}
+
+
+#contact .form-control {
+  margin-bottom: 1rem;
+}
+
+#contact .form-group{
+  color: #fff;
+}
+
+#contact .btn-primary {
+  margin-top: 1rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  box-shadow: #fbf6f6;
+}
+
+#contact .btn-primary:hover{
+  color: #fff;
+  background-color: black;
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  #features li {
-    flex-basis: calc(50% - 2rem);
-  }
-}
 
-@media screen and (max-width: 480px) {
-  #features li {
-    flex-basis: 100%;
-  }
-
-  #features h2 {
-    font-size: 1.5rem;
-  }
-
-  #hero h1 {
-    font-size: 2.5rem;
-  }
-
-  #hero p {
-    font-size: 1rem;
-  }
-}
-
+/*---------------------footer-------------------------------------*/
 footer {
   background-color: #333;
   color: #fff;
@@ -319,24 +293,4 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-
-.upper-arrow {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 24px;
-  text-decoration: none;
-  color: #000;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease;
-}
-
-.upper-arrow:hover {
-  opacity: 0.7;
 }

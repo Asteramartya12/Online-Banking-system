@@ -39,38 +39,31 @@
       <!----------------------About--------------------------------->
 
     <section id="about">
-      <h1>About JabTV</h1>
-      <p>
-        Irure culpa adipisicing cupidatat dolor irure. Officia do labore in ad incididunt. Culpa ullamco qui elit labore quis et. Aliqua incididunt qui eu velit voluptate nulla aliquip nulla reprehenderit. Sunt ullamco labore ullamco fugiat irure. Cillum proident nulla occaecat sint incididunt anim labore nostrud fugiat in cupidatat pariatur id. Pariatur pariatur enim dolore sunt veniam laboris ad sint excepteur elit.
-
-Laboris minim et nisi do. Occaecat in Lorem dolore ea aute est ad deserunt eu sit officia consequat occaecat. Ut adipisicing mollit sit eu adipisicing enim cillum ut. Ut amet magna eu voluptate mollit eiusmod officia.
-
-Excepteur in officia adipisicing ut aliquip non. Cillum voluptate anim adipisicing officia. Officia qui culpa ut culpa.
-
-Pariatur enim et excepteur aute proident sit dolor ea id nulla consequat dolore. Incididunt proident esse reprehenderit consectetur. Aliquip velit do commodo cupidatat minim veniam exercitation. Proident ipsum sunt fugiat nulla magna. Commodo et velit est veniam consequat nisi commodo mollit occaecat Lorem aliqua.
-
-Adipisicing voluptate excepteur aute quis occaecat irure pariatur commodo incididunt labore id officia et. Reprehenderit fugiat velit culpa laboris amet incididunt incididunt mollit duis amet et labore. Non quis sint culpa ad in cillum dolor voluptate aliquip. Irure dolore fugiat enim non veniam pariatur ea ullamco est adipisicing. Ut consequat laboris mollit irure et. Aute deserunt laboris ad eiusmod consequat sint magna consectetur ipsum non ea labore. Eiusmod excepteur fugiat quis duis commodo laboris proident qui excepteur esse eiusmod sint do.
-      </p>
-
-      <div class="bar-graph">
-        <div class="bar-container">
-          <div class="bar" style="height: 60%;"></div>
-          <div class="bar-label">
-            <span class="number">10M</span>
-            <span class="text">Customers</span>
-          </div>
-        </div>
-        <div class="bar-container">
-          <div class="bar" style="height: 80%;"></div>
-          <div class="bar-label">
-            <span class="number">95%</span>
-            <span class="text">Satisfaction</span>
-          </div>
-        </div>
-      </div>
+      <h1>About Us</h1>
+            <p>
+              Welcome to our centralized banking system. We are a team of experienced professionals committed to providing secure, fast, and convenient banking services to our customers.
+            </p>
+    
+            <p>
+              Our system is designed to be user-friendly, efficient, and accessible from anywhere in the world. We offer a wide range of services, including online banking, fund transfers, bill payments, and more.
+            </p>
+    
+            <p>
+              We take pride in our commitment to security and privacy. Our system is equipped with state-of-the-art encryption and firewall technology to ensure that your information is safe and secure at all times.
+            </p>
+    
+            <p>
+              We are constantly improving our system to better serve our customers. If you have any feedback or concerns, please don't hesitate to contact us.
+            </p>
+    
+            <p class="text-center">
+              Thank you for choosing us for your banking needs.
+            </p>
     </section>
-
-    <!-------------------------------Foot features------------------------------>
+    
+      
+      
+    <!-------------------------------Services------------------------------>
       <section id="features">
         <h2>Our Features</h2>
         <ul>
@@ -94,43 +87,36 @@ Adipisicing voluptate excepteur aute quis occaecat irure pariatur commodo incidi
       </section>
 
 
-    </main>
-    <aside id="login-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Login</h2>
-        <form>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    </aside>
-    <aside id="signup-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Sign Up</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-          <button type="submit">Sign Up</button>
-        </form>
-      </div>
-    </aside>
-
-
+    <!--------------------------------contact us------------------------------------------>
+    <section id="contact">
+    <div class="container">
+      <h1 class="text-center">Contact Us</h1>
+          <h2>Get in touch</h2>
+          <p style="color: bisque;">Send us an email using your default email client:</p>
+          <a href="mailto:admin@centralizedbank.com" class="button"><img src="/Pictures/email.png" alt="mail" style="height:50px; width:50px"></a>
+        </div>
+          <h2>Send us a message</h2>
+          <form action="/send-message" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+    </section>
     <!----------------------------Footer------------------------------>  
 
     <footer>
-      <p>&copy; 2024 Money_Heist. All rights reserved.</p>
+      <p>&copy; 2024 Mark_It_X. All rights reserved.</p>
     </footer>
-    <a href="#top" class="upper-arrow">&#8593;</a>
     <script src="script.js"></script>
   </body>
 </html>
